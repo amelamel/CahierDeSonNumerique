@@ -111,7 +111,7 @@ public class ElevesBDD {
  
 		//Sinon on se place sur le premier élément
 		c.moveToFirst();
-		//On créé un livre
+		//On créé un eleve
 		Eleve eleve = new Eleve();
 		//on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
 		eleve.setId(c.getInt(NUM_COL_ID));
@@ -124,7 +124,7 @@ public class ElevesBDD {
 		//On ferme le cursor
 		c.close();
  
-		//On retourne le livre
+		//On retourne l eleve
 		return eleve;
 	}
 }

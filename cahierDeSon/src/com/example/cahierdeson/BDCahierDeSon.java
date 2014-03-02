@@ -27,7 +27,7 @@ public class BDCahierDeSon extends SQLiteOpenHelper {
 	
 	private static final String QUERY_CREATE_MODULES=" create table "+TABLE_MODULES+"(" +
 			"id_module INTEGER primary key autoincrement," +
-			"grepheme text not NULL," +
+			"grepheme text not NULL," + /* lien_image_borel text, lien_image_word text */
 			"lien_image TEXT," +
 			"lien_son TEXT," +
 			"lien_video TEXT," +
