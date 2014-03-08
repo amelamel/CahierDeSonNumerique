@@ -42,7 +42,7 @@ public abstract class Utilisateur {
 	
 	/***************************************************setters*******************************************************/
 	
-	protected void changeMotDePass(String mp){
+	public void changeMotDePass(String mp){
 		this.mot_de_pass=mp;
 		
 		//a completer

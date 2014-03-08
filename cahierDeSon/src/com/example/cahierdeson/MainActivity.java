@@ -1,5 +1,6 @@
 package com.example.cahierdeson;
 
+import BD.*;
 import android.os.Bundle;
 import android.app.Activity;
 import android.database.Cursor;
@@ -10,14 +11,16 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
     @Override
+    
+    //le main activity teste la base de données
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
         
-        /*******************************************/
+        /****************************decommenter si vous voulez tester la table elève***************/
         //Création d'une instance de ma classe EleveBDD
-        ElevesBDD elevesbdd = new ElevesBDD(this);
+        /*ElevesBDD elevesbdd = new ElevesBDD(this);
      
         //Création d'un eleve String nom, String prenom, String pass,String surnom,String classe) 
         Eleve eleve = new Eleve( "amel","krouma","h%jj","ammoula","cm1");
@@ -63,7 +66,18 @@ public class MainActivity extends Activity {
         	Toast.makeText(this, "Cet élève existe dans la BDD", Toast.LENGTH_LONG).show();
         }
  
-        elevesbdd.close();
+        elevesbdd.close();*/
+        
+      //Création d'une instance de ma classe ModuleBDD
+        ModulesBDD modulebdd = new ModulesBDD(this);
+        modulebdd.open();
+        //Création d'un module et l'insérer dans la bd
+      //  Module module =new Module( 0,"A", "image/a.png","son/a.mp3","video/A.mp4","05/05/2012",1);
+        Module module =new Module( 0,"B", "image/b.png","son/b.mp3","video/b.mp4","05/05/2012",2);
+        modulebdd.insertModule(module);
+        modulebdd.close();
+        
+        
     }
         
         /********************************************/

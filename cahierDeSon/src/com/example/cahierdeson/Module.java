@@ -3,7 +3,7 @@ package com.example.cahierdeson;
 public class Module {
 	
 	private int id_module;
-	private String word_module;
+	//private String word_module;
 	private String grapheme;
 	private String lien_image;
 	//private String lien_image_word;
@@ -15,10 +15,10 @@ public class Module {
 	
 	public Module(){}
 	
-	public Module( int id_module, String word_module, String grapheme, String lien_image,/*String lien_image_borel*/String lien_son,String lien_video,String date_creation,int id_eleve)
+	public Module( int id_module, String grapheme, String lien_image,String lien_son,String lien_video,String date_creation,int id_eleve)
 	{
 		this.id_module=id_module;
-		this.word_module=word_module;
+		//this.word_module=word_module;
 		this.grapheme=grapheme;
 		this.lien_image=lien_image;
 		this.lien_son=lien_son;
@@ -33,7 +33,7 @@ public class Module {
 	
 	public int getID(){return this.id_module;}
 	
-	public String getWord(){return this.word_module;}
+	//public String getWord(){return this.word_module;}
 	
 	public String getGrapheme(){return this.grapheme;}
 	
@@ -55,7 +55,7 @@ public class Module {
 	public void setGrapheme(String g){this.grapheme=g;} 	
    public void setID(int id){this.id_module=id;}
    
-   public void setWord(String world){ this.word_module=world;}
+  // public void setWord(String world){ this.word_module=world;}
    
    public void setLienImage(String lien){ this.lien_image=lien;}
    

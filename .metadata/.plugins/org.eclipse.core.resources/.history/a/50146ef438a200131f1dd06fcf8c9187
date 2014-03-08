@@ -1,0 +1,26 @@
+package com.example.cahierdeson;
+
+public class Module {
+	
+	private String id_module;
+	private String word_module;
+	private String grapheme;
+	private String lien_image;
+	private String lien_son;
+	private String lien_video;
+	private String date_creation;
+	
+	public Module(){}
+	
+	public Module( String id_module, String word_module, String grapheme, String lien_image,String lien_son,String lien_video,String date_creation)
+	{
+		this.id_module=id_module;
+		this.word_module=word_module;
+		this.grapheme=grapheme;
+		this.lien_image=lien_image;
+		this.lien_son=lien_son;
+		this.lien_video=lien_video;
+		this.date_creation=date_creation;
+	}
+
+}
