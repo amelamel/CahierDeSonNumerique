@@ -1,6 +1,7 @@
 package com.example.cahierdeson;
 
 import BD.*;
+import Modeles.Module;
 import android.os.Bundle;
 import android.app.Activity;
 import android.database.Cursor;
@@ -18,7 +19,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         
-        /****************************decommenter si vous voulez tester la table elève***************/
+        /****************************decommenter si vous voulez tester la table elève et créer la base de données ***************/
         //Création d'une instance de ma classe EleveBDD
         /*ElevesBDD elevesbdd = new ElevesBDD(this);
      

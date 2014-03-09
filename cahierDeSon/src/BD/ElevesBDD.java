@@ -1,7 +1,7 @@
 package BD;
 
-import com.example.cahierdeson.Eleve;
 
+import Modeles.Eleve;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
